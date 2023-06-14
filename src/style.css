@@ -75,6 +75,9 @@ h1::after {
 #search::placeholder {
   opacity: 0.5;
 }
+.content {
+  min-height: calc(100vh - 230px);
+}
 .cardlist {
   width: 100%;
   min-height: 100vh;
@@ -122,8 +125,7 @@ h1::after {
 }
 footer {
   width: 100%;
-  margin-top: 20px;
-  padding: 20px;
+  padding: 40px 0px 20px;
 }
 footer a {
   margin: 5px;

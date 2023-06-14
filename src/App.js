@@ -36,27 +36,29 @@ function App() {
         <h1>RoboFriends</h1>
       </header>
       <Searchbox searchChange={searchChange} />
-      {robots.length > 0 ? (
-        <CardList robots={filteredRobots ? filteredRobots : robots} />
-      ) : (
-        <div className="no-data">
-          <ThreeDots
-            height="80"
-            width="80"
-            radius="9"
-            color="rgb(71, 28, 91)"
-            ariaLabel="three-dots-loading"
-            wrapperStyle={{}}
-            wrapperClassName=""
-            visible={true}
-          />
-        </div>
-      )}
+      <section className="content">
+        {robots.length > 0 ? (
+          <CardList robots={filteredRobots ? filteredRobots : robots} />
+        ) : (
+          <div className="no-data">
+            <ThreeDots
+              height="80"
+              width="80"
+              radius="9"
+              color="rgb(71, 28, 91)"
+              ariaLabel="three-dots-loading"
+              wrapperStyle={{}}
+              wrapperClassName=""
+              visible={true}
+            />
+          </div>
+        )}
+      </section>
       <footer>
         The app was created by
         <a href="https://github.com/Jafarl1" target="_blank" rel="noreferrer">
           ©️ Zohrab Jafarli
-        </a> 
+        </a>
         in 2023.
       </footer>
     </>
