@@ -35,7 +35,12 @@ function App() {
       <header>
         <h1>RoboFriends</h1>
       </header>
-      <Searchbox searchChange={searchChange} />
+      <Searchbox
+        name="search"
+        id="search"
+        placeholder="Search"
+        searchChange={searchChange}
+      />
       <section className="content">
         {robots.length > 0 ? (
           <CardList robots={filteredRobots ? filteredRobots : robots} />

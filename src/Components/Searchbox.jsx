@@ -1,12 +1,12 @@
 import React from 'react'
 
-function Searchbox({ searchChange }) {
+function Searchbox({ name, id, placeholder, searchChange }) {
     return (
         <input
             type="search"
-            name="search"
-            id="search"
-            placeholder="Search"
+            name={name}
+            id={id}
+            placeholder={placeholder}
             onInput={searchChange}
         />
     )
